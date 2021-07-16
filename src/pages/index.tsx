@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from '../../styles/Home.module.css';
 
 const foo = 'bla';
+const bla = 'bla';
 
 export default function Home({ title = 'React' }) {
   return (
