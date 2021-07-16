@@ -1,5 +1,17 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~src/*": ["./src/*"],
+      "~components/*": ["./src/components/*"],
+      "~organisms/*": ["./src/components/ui/organisms/*"],
+      "~molecules/*": ["./src/components/ui/molecules/*"],
+      "~atoms/*": ["./src/components/ui/atoms/*"],
+      "~foundations/*": ["./src/foundations/*"],
+      "~assets/*": ["./public/assets/*"],
+      "~svg/*": ["./public/assets/svg/*"],
+      "~img/*": ["./public/assets/img/*"],
+    },
     "target": "es5",
     "lib": [
       "dom",
