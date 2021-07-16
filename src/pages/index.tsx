@@ -2,9 +2,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../../styles/Home.module.css';
 
-const foo = 'bla';
-const bla = 'bla';
-
 export default function Home({ title = 'React' }) {
   return (
     <div className={styles.container}>
@@ -20,7 +17,7 @@ export default function Home({ title = 'React' }) {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing <code className={styles.code}>pages/index.js</code>
+          Get started by editing <code className={styles.code}>{title}</code>
         </p>
 
         <div className={styles.grid}>
