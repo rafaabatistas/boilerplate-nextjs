@@ -4,10 +4,11 @@
     "paths": {
       "~src/*": ["./src/*"],
       "~components/*": ["./src/components/*"],
+      "~templates/*": ["./src/components/ui/templates/*"],
       "~organisms/*": ["./src/components/ui/organisms/*"],
       "~molecules/*": ["./src/components/ui/molecules/*"],
       "~atoms/*": ["./src/components/ui/atoms/*"],
-      "~foundations/*": ["./src/foundations/*"],
+      "~styles/*": ["./src/styles/*"],
       "~assets/*": ["./public/assets/*"],
       "~svg/*": ["./public/assets/svg/*"],
       "~img/*": ["./public/assets/img/*"],
@@ -34,7 +35,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/styles/mixins.ts"  ],
   "exclude": [
     "node_modules"
   ]
