@@ -1,6 +1,7 @@
 module.exports = {
   testEnvironment: 'jsdom',
   testPathIgnorePatterns: ['/node_modules/', '/.next/'],
+  modulePathIgnorePatterns: ['<rootDir>/src/pages', '<rootDir>/src/styles'],
   moduleNameMapper: {
     '~src/(.*)': '<rootDir>/src/$1',
     '~components/(.*)': '<rootDir>/src/components/$1',
@@ -15,5 +16,6 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ['src/**/*.ts(x)?'],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
+  testMatch: ['**/*.test.tsx', '**/*/*.test.tsx', '**/*/*/*.test.tsx'],
   modulePaths: ['<rootDir>/src/']
 };
